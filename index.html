@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Excel</title>
+</head>
+
+<body>
+    <h1>Download Excel</h1>
+    <script>
+        // const exportExcel = () => {
+        // 	if (!_.isEmpty(rowData)) {
+        // 		var workbook = new Excel.Workbook();
+        // 		let worksheet;
+        // 		worksheet = workbook.addWorksheet('StackWeightReport');
+
+        // 		worksheet.mergeCells(['A1:B1']);
+        // 		worksheet.mergeCells(['A2:B2']);
+        // 		worksheet.mergeCells(['A3:B3']);
+        // 		worksheet.mergeCells(['A4:B4']);
+        // 		worksheet.mergeCells(['D1:E1']);
+        // 		worksheet.mergeCells(['D2:E2']);
+        // 		worksheet.mergeCells(['D3:E3']);
+        // 		worksheet.mergeCells(['D4:E4']);
+        // 		worksheet.mergeCells(['G1:H1']);
+        // 		worksheet.mergeCells(['G2:H2']);
+        // 		worksheet.mergeCells(['G3:H3']);
+        // 		worksheet.mergeCells(['G4:H4']);
+        // 		worksheet.mergeCells(['J1:K1']);
+        // 		worksheet.mergeCells(['J2:K2']);
+        // 		worksheet.mergeCells(['J3:K3']);
+        // 		worksheet.mergeCells(['J4:K4']);
+        // 		worksheet.mergeCells(['D6:H6']);
+        // 		worksheet.getCell('D6').value = 'Stack Weight Report';
+
+        // 		const mergedCells = [Object.keys(worksheet._merges)];
+
+        // 		mergedCells[0].forEach(cell => {
+        // 			worksheet.getCell(cell).font = {
+        // 				size: 12,
+        // 				bold: true
+        // 			};
+        // 			worksheet.getCell(cell).fill = {
+        // 				type: 'pattern',
+        // 				pattern: 'solid',
+        // 				fgColor: { argb: '70db70' }
+        // 			};
+        // 		});
+
+        // 		const emptyCell = ['C1', 'C2', 'C3', 'C4', 'I1', 'I2', 'I3', 'I4'];
+        // 		emptyCell.forEach(item => {
+        // 			worksheet.getCell(item).fill = {
+        // 				type: 'pattern',
+        // 				pattern: 'solid',
+        // 				fgColor: { argb: 'adebad' }
+        // 			};
+        // 		});
+        // 		worksheet.getCell('A1').value = 'Vessel';
+        // 		worksheet.getCell('A2').value = 'Service';
+        // 		worksheet.getCell('A3').value = 'VesselName';
+        // 		worksheet.getCell('A4').value = 'Voyage';
+        // 		worksheet.getCell('D1').value = vessel;
+        // 		worksheet.getCell('D2').value = service;
+        // 		worksheet.getCell('D3').value = vesselname;
+        // 		worksheet.getCell('D4').value = voyage;
+        // 		worksheet.getCell('C1').value = ':';
+        // 		worksheet.getCell('C2').value = ':';
+        // 		worksheet.getCell('C3').value = ':';
+        // 		worksheet.getCell('C4').value = ':';
+        // 		worksheet.getCell('I1').value = ':';
+        // 		worksheet.getCell('I2').value = ':';
+        // 		worksheet.getCell('I3').value = ':';
+        // 		worksheet.getCell('I4').value = ':';
+        // 		worksheet.getCell('G1').value = 'Date';
+        // 		worksheet.getCell('G2').value = 'Port';
+        // 		worksheet.getCell('G3').value = 'Terminal';
+        // 		worksheet.getCell('G4').value = 'Bound';
+        // 		worksheet.getCell('J1').value = new Date();
+        // 		worksheet.getCell('J2').value = port;
+        // 		worksheet.getCell('J3').value = terminal;
+        // 		worksheet.getCell('J4').value = bound;
+
+        // 		let coldata = _.map(stackWeightReportcolDef, _.property('headerName'));
+        // 		let cols = [];
+        // 		coldata.forEach(d => {
+        // 			cols.push({ name: d });
+        // 		});
+
+        // 		worksheet.addTable({
+        // 			name: 'table1',
+        // 			ref: 'A8',
+        // 			columns: [...cols],
+        // 			rows: []
+        // 		});
+
+        // 		//for setting the font bold in Table Columns
+        // 		worksheet.columns.forEach(columns => {
+        // 			columns.width = 15;
+        // 		});
+
+        // 		worksheet.getRow(8).eachCell(cell => {
+        // 			cell.font = {
+        // 				size: 12,
+        // 				bold: true
+        // 			};
+        // 			cell.fill = {
+        // 				type: 'pattern',
+        // 				pattern: 'solid',
+        // 				fgColor: { argb: 'ffb366' }
+        // 			};
+        // 			cell.border = { left: { style: 'hair' }, right: { style: 'hair' } };
+        // 		});
+
+        // 		rowData.forEach((item, i) => {
+        // 			worksheet.addRow([
+        // 				item.twinbayNo,
+        // 				item.stackNo,
+        // 				item.bayNo,
+        // 				item.rowNo,
+        // 				item.maxweight,
+        // 				item.totalweight,
+        // 				item.remainval
+        // 			]);
+        // 		});
+
+        // 		worksheet.eachRow(item => {
+        // 			item.alignment = {
+        // 				vertical: 'middle',
+        // 				horizontal: 'center'
+        // 			};
+        // 		});
+        // 		workbook.xlsx.writeBuffer().then(buffer => {
+        // 			const blob = new Blob([buffer], {
+        // 				type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8'
+        // 			});
+        // 			FileSaver.saveAs(blob, 'StackWeightReport.xlsx');
+        // 		});
+        // 	} else {
+        // 		alert('Data should not be empty');
+        // 	}
+        // };
+        // <button onClick={exportExcel} className="export-btn-stkht">
+    </script>
+
+</body>
+
+</html>
